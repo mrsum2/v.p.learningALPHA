@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to V.P Piano!</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .slide { display: none; }
+        .active { display: block; }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to V.P Piano!</h1>
+    <div id="slideshow">
+        <div class="slide active">
+            <h2>Slide 1: Introduction to Piano</h2>
+            <p>Learn the basics of piano playing.</p>
+        </div>
+        <div class="slide">
+            <h2>Slide 2: Notes on the Piano</h2>
+            <p>Understanding the notes: C, D, E, F, G, A, B.</p>
+        </div>
+        <div class="slide">
+            <h2>Slide 3: Chords</h2>
+            <p>Learn about major and minor chords.</p>
+        </div>
+        <div class="slide">
+            <h2>Final Slide: Summary</h2>
+            <p>Great job! Keep practicing!</p>
+        </div>
+    </div>
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    </script>
+
+</body>
+</html>
