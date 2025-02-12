@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to V.P Piano!</title>
+    <title>Welcome to Virtual Piano!</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .slide { display: none; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        h1 { text-align: center; }
+        .slide { display: none; padding: 20px; }
         .active { display: block; }
+        button { margin: 10px; padding: 10px; }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to V.P Piano!</h1>
+    <h1>Welcome to Virtual Piano!</h1>
     <div id="slideshow">
         <div class="slide active">
-            <h2>Slide 1: Introduction to Piano</h2>
-            <p>Learn the basics of piano playing.</p>
+            <h2>Slide 1: Introduction to VirtualPiano.net</h2>
+            <p>VirtualPiano.net is an online piano simulator that allows you to play piano using your keyboard or mouse.</p>
         </div>
         <div class="slide">
-            <h2>Slide 2: Notes on the Piano</h2>
-            <p>Understanding the notes: C, D, E, F, G, A, B.</p>
+            <h2>Slide 2: Getting Started</h2>
+            <p>Visit <a href="https://virtualpiano.net" target="_blank">VirtualPiano.net</a> to access the piano.</p>
         </div>
         <div class="slide">
-            <h2>Slide 3: Chords</h2>
-            <p>Learn about major and minor chords.</p>
+            <h2>Slide 3: Using Your Keyboard</h2>
+            <p>Use the keys on your keyboard to play notes. The keys correspond to the piano keys.</p>
         </div>
         <div class="slide">
-            <h2>Final Slide: Summary</h2>
-            <p>Great job! Keep practicing!</p>
+            <h2>Slide 4: Playing Songs</h2>
+            <p>Explore the song library to find popular songs to play along with.</p>
+        </div>
+        <div class="slide">
+            <h2>Slide 5: Tips for Practice</h2>
+            <p>Practice regularly and try to play along with the songs to improve your skills!</p>
+        </div>
+        <div class="slide">
+            <h2>Final Slide: Enjoy Playing!</h2>
+            <p>Have fun and enjoy making music with VirtualPiano.net!</p>
         </div>
     </div>
     <button onclick="prevSlide()">Previous</button>
